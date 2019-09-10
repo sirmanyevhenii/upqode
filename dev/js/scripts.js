@@ -13,12 +13,16 @@ $(".hamburger").click(function(e) {
 // slider
 
 $('.banner-slider').slick({
-	dots: true
+	dots: true,
+	autoplay: true,
+  autoplaySpeed: 7000
 });
 
 $('.products-slider').slick({
 	arrow: false,
-	dots: true
+	dots: true,
+	autoplay: true,
+  autoplaySpeed: 5000
 });
 
 

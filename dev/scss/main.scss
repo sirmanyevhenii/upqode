@@ -63,7 +63,7 @@ main {
 		display: flex;
 		align-items: center;
 		transition: all .3s ease-out;
-		&:hover, &:focus, &:focus-within {
+		&:hover, &:focus, &:focus-within, &:active {
 			text-shadow: 0 0 .01px black, 0 0 .01px black, 0 0 .01px black;
 		}
 	}
@@ -84,6 +84,10 @@ main {
 		&:focus-within {
 			color: #FFF200;
 		}
+
+		&:active {
+			color: #FFF200;
+		}
 	}
 
 	li:hover > ul {
@@ -97,6 +101,12 @@ main {
 		opacity: 1;
 	}
 	li:focus-within > ul {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	li:active > ul {
 		display: block;
 		visibility: visible;
 		opacity: 1;
@@ -130,7 +140,7 @@ main {
 			left: 14px;
 			transition: all .3s ease-out;
 		}
-		&:hover, &:focus, &:focus-within {
+		&:hover, &:focus, &:focus-within, &:active {
 			color: #FFF200;
 			&::before {
 				color: #fff200;
@@ -238,7 +248,7 @@ main {
 		background-color: rgba(0, 0, 0, 0.3);
 		color: #fff;
 		border-top: none;
-		a:focus {
+		a:focus, a:active {
 			&::before, &::after {
 				top: -1px;
 				left: 16px;
