@@ -1,0 +1,344 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title UPQODE
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		//- favicon
+		link(rel="apple-touch-icon", sizes="144x144", href="favicon/apple-touch-icon.png")
+		link(rel="icon", type="image/png", sizes="32x32", href="favicon/favicon-32x32.png")
+		link(rel="icon", type="image/png", sizes="16x16", href="favicon/favicon-16x16.png")
+		link(rel="manifest", href="favicon/site.webmanifest")
+		link(rel="mask-icon", href="favicon/safari-pinned-tab.svg", color="#5bbad5")
+		meta(name="msapplication-TileColor", content="#da532c")
+		meta(name="theme-color", content="#ffffff")
+		//- style
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+		link(href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet")
+		script(src="https://kit.fontawesome.com/3b47843d20.js")
+		link(rel='stylesheet' href='css/style.css')
+	body
+		header.header
+			.container
+				.header-inner
+					.logo
+						a.logo-link.smooth(href="#home")
+							img(src="images/logo.png", alt="logo")
+					nav.header-nav
+						.hamburger
+							.line
+							.line
+							.line
+						ul.menu
+							li.menu_item
+								a.smooth(href="#home", title="home") home
+							li.menu_item 
+								a.smooth(href="#products", title="products") products
+								ul.s-menu
+									li.menu_sitem 
+										a(href="#") subitem subitem
+									li.menu_sitem 
+										a(href="#") subitem
+									li.menu_sitem 
+										a(href="#") subitem subitem
+										ul.ss-menu
+											li.menu_sitem
+												a(href="#") subsubitem
+											li.menu_sitem
+												a(href="#") subsubitem subitem
+											li.menu_sitem
+												a(href="#") subsubitem
+											li.menu_sitem
+												a(href="#") subsubitem subitem
+											li.menu_sitem
+												a(href="#") subsubitem
+									li.menu_sitem
+										a(href="#") subitem
+							li.menu_item
+								a.smooth(href="#about", title="about") about
+							li.menu_item
+								a.smooth(href="#contact", title="contact") contact
+							li.top-search
+								form(action="/action_page.php")
+									input(type="search")
+									button(type="submit")
+
+		main
+			section.main-banner#home
+				.banner-slider
+					.banner-slide
+						.banner-slide_inner
+							h2.banner-slide_title Creative Design 
+								span Agency
+							p.banner-slide_descr Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+					.banner-slide
+						.banner-slide_inner
+							h2.banner-slide_title Creative Design 
+								span Agency
+							p.banner-slide_descr Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
+					.banner-slide
+						.banner-slide_inner
+							h2.banner-slide_title Creative Design 
+								span Agency
+							p.banner-slide_descr Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur.
+			section.why-us#about
+				.container
+					.why-us_title
+						h2 Why 
+							span Choose Us
+						p Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at scelerisque tellus mattis volutpat rhoncus,
+					.why-us_list
+						article.why-us_item
+							.why-us_item-img
+								i.far.fa-heart
+							.why-us_item-caption
+								h4.why-us_item-title your title
+								p.why-us_item-descr Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
+								.why-us_item--hov
+									a(href="#") see more
+									a.why-us_item-link(href="#")
+										i.fas.fa-link
+									a.why-us_item-zoom(href="#")
+										i.fas.fa-search-plus
+						article.why-us_item
+							.why-us_item-img
+								i.far.fa-comment-dots
+							.why-us_item-caption
+								h4.why-us_item-title your title
+								p.why-us_item-descr Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
+								.why-us_item--hov
+									a(href="#") see more
+									a.why-us_item-link(href="#")
+										i.fas.fa-link
+									a.why-us_item-zoom(href="#")
+										i.fas.fa-search-plus
+						article.why-us_item
+							.why-us_item-img
+								i.fas.fa-laptop
+							.why-us_item-caption
+								h4.why-us_item-title your title
+								p.why-us_item-descr Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
+								.why-us_item--hov
+									a(href="#") see more
+									a.why-us_item-link(href="#")
+										i.fas.fa-link
+									a.why-us_item-zoom(href="#")
+										i.fas.fa-search-plus
+						article.why-us_item
+							.why-us_item-img
+								i.far.fa-star
+							.why-us_item-caption
+								h4.why-us_item-title your title
+								p.why-us_item-descr Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
+								.why-us_item--hov
+									a(href="#") see more
+									a.why-us_item-link(href="#")
+										i.fas.fa-link
+									a.why-us_item-zoom(href="#")
+										i.fas.fa-search-plus
+						article.why-us_item
+							.why-us_item-img
+								i.far.fa-flag
+							.why-us_item-caption
+								h4.why-us_item-title your title
+								p.why-us_item-descr Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
+								.why-us_item--hov
+									a(href="#") see more
+									a.why-us_item-link(href="#")
+										i.fas.fa-link
+									a.why-us_item-zoom(href="#")
+										i.fas.fa-search-plus
+			section.products#products
+				h2.products-title our 
+					span products
+				.container
+					.products-slider
+						.products-slide
+							.products-list
+								.products-item
+									.products-img
+										img(src="images/prod-1.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-2.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-3.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-4.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-5.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-6.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+						.products-slide
+							.products-list
+								.products-item
+									.products-img
+										img(src="images/prod-1.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-2.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-3.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-4.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-5.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-6.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+						.products-slide
+							.products-list
+								.products-item
+									.products-img
+										img(src="images/prod-1.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-2.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-3.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-4.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-5.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+								.products-item
+									.products-img
+										img(src="images/prod-6.jpg", alt="image")
+									.products-caption
+										h4.products-name title
+										a.products-category(href="#") best product
+										p.products-descr Duis bibendum diam non erat facilaisis en ter
+			section.contact#contact
+				h2.contact-title get in 
+					span touch
+				p.contact-descr Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at scelerisque tellus mattis volutpat rhoncus, 
+				.form-wrap
+					.maps-wrap
+						iframe(src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d41169.34169044839!2d23.988343896317424!3d49.840881879137896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x473add71848a46ef%3A0xb1011b977c505352!2z0LLRg9C70LjRhtGPINCi0LDQtNC10YPRiNCwINCa0L7RgdGC0Y7RiNC60LAsIDE2LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCw!3m2!1d49.8408318!2d24.0233632!5e0!3m2!1sru!2sua!4v1568040206498!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0; min-height:634px; height:100%;" allowfullscreen="")
+					.form-container
+						form(action="#")
+							input.input(type="text", name="user-name", placeholder="Full Name", required)
+							input.input(type="email", name="user-mail", placeholder="E-mail Address", required)
+							textarea.input.textarea(name="message", cols="30", rows="10", placeholder="Message", required)
+							.form-footer
+								label.check-label
+									input.check-agree(type="checkbox", name="checkAgree" required)
+									span.check-icon
+									span.check-value I like your company
+								input.submit(type="submit", value="Send")
+
+						ul.contact-info
+							li.contact-info_address
+								a(href="https://goo.gl/maps/9uYZsTyVjLRw7qhR8", target="_blank") 69/A, Some Street Name
+									br 
+									| Your City, code 01234 
+									br
+									| Country Name
+							li
+								a(href="tel:+880 123 456 78 98") +880 123 456 78 98
+							li.contact-info_phone
+								a(href="tel:+860 987 648 74 95") +860 987 648 74 95
+							li.contact-info_mail
+								a(href="mailto:company@mail.com") company@mail.com
+							li.contact-info_mail
+								a(href="mailto:sales@mail.com") sales@mail.com
+
+
+		footer.footer
+			p Copyright © Company. All Rights Reserved  2016
+			ul.social-list
+				li
+					a.social-link_facebook(href="https://www.facebook.com")
+						img(src="images/facebook.png", alt="icon")
+				li
+					a.social-link_google(href="https://plus.google.com")
+						img(src="images/googleplus.png", alt="icon")
+				li
+					a.social-link_twitter(href="https://twitter.com")
+						img(src="images/twitter.png", alt="icon")
+				li
+					a.social-link_dribbble(href="https://dribbble.com")
+						img(src="images/dribbble.png", alt="icon")
+
+		script(src='js/jquery.min.js')
+		script(src='js/jquery-migrate.min.js')
+		script(src='js/slick.min.js')
+		script(src='js/scripts.js')

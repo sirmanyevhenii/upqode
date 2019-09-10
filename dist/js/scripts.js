@@ -1,0 +1,1 @@
+"use strict";$(".hamburger").click(function(s){$(".header-nav").toggleClass("open")}),$(".banner-slider").slick({dots:!0}),$(".products-slider").slick({arrow:!1,dots:!0});
