@@ -1006,7 +1006,28 @@ main {
 			margin-right: 22px;			
 		}
 	}
+}
 
+@media screen and (max-width: 767px) {
 
-
+	.footer {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 20px;
+		
+		p {
+			order: 2;
+			line-height: 24px;
+			text-align: center;
+		}
+		
+		.social-list {
+			order: 1;
+			margin-bottom: 10px;
+			
+			li:not(:last-child) {
+				margin-right: 22px;			
+			}
+		}
+	}
 }
